@@ -20,7 +20,7 @@ FP16 = True
 
 MODEL_NUM = 8
 
-CHECKPOINT_MODEL = f"model{MODEL_NUM}" if MODEL_NUM is not None else None
+CHECKPOINT_MODEL = f"gpt2" if MODEL_NUM is not None else None
 
 if is_gpu_available():
     log("Using GPU")
@@ -53,5 +53,5 @@ for run in range(MODEL_NUM + 1, RUNS):
     log(f"Starting Run {run+1}/{RUNS}")
     trainer.train()
     log("Saving Model")
-    trainer.save_model(f"AI/model{run}")
+    trainer.save_model(f"ModelTrained")
 
