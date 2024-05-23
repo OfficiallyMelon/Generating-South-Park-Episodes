@@ -64,7 +64,7 @@ def download_model_files(api_url, current_path=""):
             ensure_directory_exists(full_path)
             download_model_files(f"{api_url}/{file_path}", full_path)
         elif file_type == "file":
-            file_url = f"https://huggingface.co/openai-community/gpt2-xl/resolve/main{file_path}"
+            file_url = f"https://huggingface.co/openai-community/gpt2-xl/resolve/main/{file_path}"
             download_file(file_url, full_path)
 
 def main():
