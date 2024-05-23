@@ -5,7 +5,7 @@ import logging
 from tqdm import tqdm
 
 # Define constants
-HUGGINGFACE_API_URL = "https://huggingface.co/api/models/openai-community/gpt2/tree/main"
+HUGGINGFACE_API_URL = "https://huggingface.co/openai-community/gpt2-xl/tree/main"
 MODEL_SAVE_PATH = "./gpt2"
 
 # Configure logging
